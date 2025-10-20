@@ -1,5 +1,16 @@
-[gd_scene format=3 uid="uid://b0bkermr3l7t3"]
+[gd_scene load_steps=3 format=3 uid="uid://b0bkermr3l7t3"]
+
+[ext_resource type="Script" uid="uid://8lsl4str0j3b" path="res://scripts/MeshInstance3d.cs" id="1_tyffc"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_20vo2"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 5.1115656, 0)
+fov = 60.2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.4209204)
+mesh = SubResource("BoxMesh_20vo2")
+script = ExtResource("1_tyffc")
