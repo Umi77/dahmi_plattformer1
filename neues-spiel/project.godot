@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Neues Spiel"
-run/main_scene="uid://b0bkermr3l7t3"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+run/main_scene="uid://sjnq4j68iimd"
+config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 config/icon="res://assets/icon.svg"
 
 [dotnet]
