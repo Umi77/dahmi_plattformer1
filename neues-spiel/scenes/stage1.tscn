@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://sjnq4j68iimd"]
+
+[ext_resource type="Script" uid="uid://byk2x2ubpe8v6" path="res://scripts/GameManager.cs" id="1_v53cv"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_l1ntk"]
+
+[node name="Stage1" type="Node3D"]
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("1_v53cv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_l1ntk")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07259464, 1.1920929e-07, 1.3477561)
